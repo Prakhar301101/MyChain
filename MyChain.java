@@ -32,17 +32,27 @@ public class MyChain {
     public static boolean isValid(){
         Block curBlock;
         Block prevBlock;
+        char ch[]=new char[difficulty];
+        for(int i=0;i<difficulty;i++) ch[i]='0';
+        String target=new String(ch);
         for(int i=1;i<blockchain.size();i++){
             curBlock=blockchain.get(i);
             prevBlock=blockchain.get(i-1);
             //compare hash of cur block with calculated hash of cur block
             if(!curBlock.hash.equals(curBlock.calculateHash())){
+                System.out.println("Current hashes do not match");
                 return false;
             }
             //compare hash of prev block with the registered hash of prev block stored in cur block
             if(!prevBlock.hash.equals(curBlock.prev_Hash)){
+                System.out.println("Previous hash do not match");
                 return false;
             }
+            if(!curBlock.hash.substring(0,difficulty).equals(target)){
+                System.out.println("Block was not mined");
+                return false;
+            }
+
         }
         return true;
     }
