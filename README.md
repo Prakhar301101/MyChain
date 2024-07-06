@@ -28,15 +28,16 @@ It works by comparing the hash values between the current and previous blocks
 <p>
 Mining the blockchain refers to the process of validating and adding new transactions to the blockchain.
 Here’s a simplified explanation of what it involves:
-<em>Collecting Transactions:</em> Miners collect a group of pending transactions from the network into a block.
-<em>Solving a Puzzle:</em> Miners compete to solve a complex mathematical puzzle that is part of the Proof of Work (PoW) system. This puzzle involves finding a specific number (nonce) that, when combined with the block data and passed through a cryptographic hash function, produces a hash that meets certain criteria (usually starts with a specific number of zeros).
-<em>Finding the Solution:</em> The first miner to solve the puzzle finds the correct nonce and thus creates a valid block.
-<em>Broadcasting the Block:</em> The miner broadcasts the new block to the entire network.
-<em>Verification:</em> Other nodes in the network quickly verify the solution to ensure it is correct and that the block follows all the network rules.
-<em>Adding the Block:</em> Once verified, the block is added to the blockchain, making the transactions in that block permanent and secure.
-<em>Reward:</em> The successful miner is rewarded with newly created cryptocurrency (block reward) and any transaction fees included in the transactions within the block.
+<ul>
+<li><b>Collecting Transactions:</b> Miners collect a group of pending transactions from the network into a block.</li>
+<li><b>Solving a Puzzle:</b> Miners compete to solve a complex mathematical puzzle that is part of the Proof of Work (PoW) system. This puzzle involves finding a specific number (nonce) that, when combined with the block data and passed through a cryptographic hash function, produces a hash that meets certain criteria (usually starts with a specific number of zeros).</li>
+<li><b>Finding the Solution:</b> The first miner to solve the puzzle finds the correct nonce and thus creates a valid block.</li>
+<li><b>Broadcasting the Block:</b> The miner broadcasts the new block to the entire network.</li>
+<li><b>Verification:</b> Other nodes in the network quickly verify the solution to ensure it is correct and that the block follows all the network rules.</li>
+<li><b>Adding the Block:</b> Once verified, the block is added to the blockchain, making the transactions in that block permanent and secure.</li>
+<li><b>Reward:</b> The successful miner is rewarded with newly created cryptocurrency (block reward) and any transaction fees included in the transactions within the block.</li>
+</ul>
 
+<b>For mining Mychain, adjust the difficulty according to your pc's computational power.</b>
 
-<b>For mining Mychain, adjust the difficulty according to your pc's computational power</b>
 </p>
-
