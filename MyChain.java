@@ -1,17 +1,17 @@
 import java.util.ArrayList;
+import java.util.Scanner;
 
 import com.google.gson.GsonBuilder;
 
 public class MyChain {
     public static ArrayList<Block> blockchain=new ArrayList<Block>();
+    public static int difficulty=4;
     public static void main(String[] args) {
-        createBlock("The first block");
-        createBlock("The second block");
-        createBlock("The third block");
-        createBlock("The fourth block");
-        createBlock("The fifth block");
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter data");
+        String data=sc.nextLine();
+        createBlock(data);
         view_Chain();        
-
     }
 
     //isValid will check for the integrity of the blockchain
@@ -19,6 +19,8 @@ public class MyChain {
     //also the hash value of the previous block with prev_Hash value 
     public static void createBlock(String data){
         blockchain.add(new Block(data,getPrevHash()));
+        System.out.println("Trying to mine the block no:"+blockchain.size()+" ....Please wait!");
+        blockchain.get(blockchain.size()-1).mineBlock(difficulty);
     }
     public static String getPrevHash(){
         return blockchain.size()==0?"0":blockchain.get(blockchain.size()-1).hash;
