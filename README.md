@@ -41,3 +41,9 @@ Here’s a simplified explanation of what it involves:
 <b>For mining Mychain, adjust the difficulty according to your pc's computational power.</b>
 
 </p>
+
+<h2>Wallets, Transactions & Cryptocurrencies</h2>
+<b>In Progress!!!!!</b>
+
+
+
